@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Vulnerability Finder</title>
+    	<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="{{ url_for('static', filename='main.css') }}" />
+</head>
+<body>
+
+<!-- Header -->
+			<header id="header" class="alt" style="background-color: black">
+				<div class="logo"><a href="{{ url_for('index') }}">Intelligent Cyber Security System></a></div>
+			</header>
+
+
+
+<div style="text-align: center;padding-top: 100px">
+    <form action="/cveExtraction" method="post" id="form">
+        <button value="GetVulnerabilities" style="font-size: medium">Get Vulnerabilities</button>
+    </form>
+
+</div>
+
+<div style="text-align: center;padding: 100px">
+   <output>{{ string }}</output>
+</div>
+
+<div style="text-align: center;padding: 100px">
+<a href="/return-files/"><button>Download!</button></a>
+
+</div>
+
+
+	<!-- Footer -->
+			<footer id="footer">
+				<div class="container">
+{#					<ul class="icons">#}
+{#						<li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>#}
+{#						<li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>#}
+{#						<li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li>#}
+{#						<li><a href="#" class="icon fa-envelope-o"><span class="label">Email</span></a></li>#}
+{#					</ul>#}
+				</div>
+				<div class="copyright">
+					&copy; ICSS. All rights reserved.
+				</div>
+			</footer>
+
+		<!-- Scripts -->
+			<script src="{{ url_for('static', filename='jquery.min.js') }}"></script>
+			<script src="{{ url_for('static', filename='jquery.scrollex.min.js') }}"></script>
+			<script src="{{ url_for('static', filename='skel.min.js') }}"></script>
+			<script src="{{ url_for('static', filename='util.js') }}"></script>
+			<script src="{{ url_for('static', filename='main.js') }}"></script>
+</body>
+</html>
