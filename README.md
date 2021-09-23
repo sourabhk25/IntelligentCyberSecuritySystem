@@ -6,7 +6,9 @@ A system to detect attacks on the network and find vulnerabilities in the system
 
 Step 1: Install Bro-IDS on ubuntu. Refer "https://blog.rapid7.com/2017/06/24/how-to-install-and-configure-bro-on-ubuntu-linux/" for installation.
 
-Step 2: Clone "https://github.com/inigoperona/tcpdump2gureKDDCup99" project which converts traffic data into KDDCup format.
+Step 2: Follow "https://github.com/inigoperona/tcpdump2gureKDDCup99" project which converts traffic data into KDDCup format.
+
+Step 3: Use the CSV for training the model.
 
 
 #-----------------------------------------------------For Module 2-------------------------------------------------------------#
